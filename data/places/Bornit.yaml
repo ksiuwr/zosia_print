@@ -1,0 +1,79 @@
+name: Bornit
+localization: Szklarska Poręba
+
+restaurants:
+  - name: Karczma Karkonoska
+    distance: 1.1 km
+    time: 14 min
+    address: ul. 1 Maja 11A
+  - name: "HARNASIE"
+    distance: 0.9 km
+    time: 12 min
+    address: ul. 1 Maja 12
+  - name: Bistorante 654 m n.p.m.
+    distance: 0.75 km
+    time: 10 min
+    address: ul. Jedności Narodowej 12
+  - name: Bistro Na Widoku
+    distance: 0.7 km
+    time: 10 min
+    address: ul. Jedności Narodowej 15/1
+  - name: Alfredo
+    distance: 1.1 km
+    time: 14 min
+    address: ul. 1 Maja 15
+  - name: Grillbar NIENAŻARTY
+    distance: 0.6 km
+    time: 8 min
+    address: ul. Mickiewicza
+
+attractions:
+  - name: Krucze Skały
+    distance: 0.45 km
+    time: 7 min
+    address: Krucze skały, Szklarska Poręba
+    description: Formacja skalna o wysokości 30m, a także region wspinaczkowy. 
+  - name: Leśna Huta,
+    distance: 2.2 km
+    time: 21 min
+    address:  Kołłątaja 2, Szklarska Poręba
+    description: W hucie na oczach widzów wykonuje się ręcznie formowane szkła barwione w masie. Można obserwować wytop różnych form szklanych od ozdób po wazony i naczynia.
+  - name: Wodospad Szklarki
+    distance: 4.1 km
+    address: Wodospad Szklarki, Piechowice
+    time: 54 min
+    description: Wodospad Szklarki jest jednym z większych i piękniejszych wodospadów w Karkonoszach. Wodospad wygląda zjawiskowo - rozpoczyna się szeroką kaskadą, tworzącą ciekawe zawirowania przy spadku do kotła erozyjnego.
+  - name: Esplanada
+    distance: 1.0 km
+    address: Szklarska Poręba, ul. Pstrowskiego 5a 
+    time: 15 min
+    description: Park rozrywki, w którym znajdują się m.in kolejka grawitacyjna "Alpine Coaster","Wieża emocji”, Mini Golf i lodowisko.
+  - name: Szrenica Ski Arena,
+    distance: 1.3 km
+    time: 22 min/7 min samochodem
+    address: Turystyczna 25A
+    description: Zespół wszelkiego typu wyciągów i zróżnicowanych stoków narciarskich, wytyczonych na północnych zboczach Szrenicy w Szklarskiej Porębie.
+  - name: SkiResort ČERNÁ HORA - PEC
+    distance: 61.7 km
+    address: Pec pod Sněžkou i okolice
+    time: 1 h 14 min samochodem
+    description: Największy resort w Czechach, gdzie możecie jeździć na nartach po 50 km nartostrad i tras narciarskich na 1 karnet. SkiResort tworzy 6 ośrodków - Černá hora, Pec pod Sněžkou, Černý Důl, Malá Úpa, Velká Úpa i Svoboda nad Úpou. Każdy z nich ma inny charakter i różny stopień trudności na nartostradach.
+
+transport: >-
+  Do Szklarskiej Poręby kursuje pociąg, którym to się tam dostaniemy. Stacja kolejowa jest odległa od hotelu o 1.3 km i przejście tej trasy zajmuje około 21 min.
+  Już w Szklarskiej Porębie kursują równiez autobusy linnii N i linii S.
+
+hiking:
+  - name: Wodospad Kamieńczyka
+    height: 846 m n.p.m
+    distance: 2.1 km
+    time: 37 min
+  - name: Schronisko na Hali Szrenickiej
+    height: 1280 m n.pm
+    distance: 4.4 km
+    time: 1 h 28 min
+  - name: Owcze skały
+    height: 1041 m n.p.m.
+    distance: 4.8 km
+    time: 1 h 22 min
+
