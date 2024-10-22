@@ -143,6 +143,11 @@ def generate_schedule(path: str, data: Dict[str, Any]) -> List[Dict[str, Any]]:
     return schedule
 
 
+def export_schedule_to_json(schedule: List[Dict[str, Any]]) -> None:
+    with open(f"{TARGET_DIR}/web_schedule.json", "w", encoding="utf-8") as file:
+        file.write(json.dumps(schedule))
+
+
 def get_options(path: str) -> List[str]:
     return [f.rstrip(".yaml") for f in os.listdir(path)]
 
@@ -301,9 +306,7 @@ def main() -> None:
         })
 
         # Web schedule for zosia-site
-        render_document("schedule/web_schedule_template.html", {
-                            "days": schedule
-                        }, "web_schedule", True)
+        export_schedule_to_json(schedule)
 
     if render_all or args.render.startswith('identifier'):
         # Identifier
