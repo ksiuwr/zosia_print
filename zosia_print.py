@@ -80,6 +80,8 @@ def generate_schedule(path: str, data: Dict[str, Any]) -> List[Dict[str, Any]]:
              break_time, event_type, comments, highlighted, service,
              additional_comments, duration) = row
 
+            is_highlighted = highlighted.lower() == "yes"
+
             # NOTE: these structures are backward compatible with old templates
             if event_type.lower() != "lecture":
                 events.append({
@@ -88,6 +90,7 @@ def generate_schedule(path: str, data: Dict[str, Any]) -> List[Dict[str, Any]]:
                     "startTime": start_time,
                     "duration": duration,
                     "endTime": end_time,
+                    "highlighted": is_highlighted,
                 })
                 continue
 
@@ -107,7 +110,6 @@ def generate_schedule(path: str, data: Dict[str, Any]) -> List[Dict[str, Any]]:
             organization = lecture_data[
                 'author__preferences__organization__name']
 
-            is_highlighted = highlighted.lower() == "yes"
             highlight_type = 'none'
 
             # Highlight Lecture
