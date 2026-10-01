@@ -107,15 +107,16 @@ def generate_schedule(path: str, data: Dict[str, Any]) -> List[Dict[str, Any]]:
             organization = lecture_data[
                 'author__preferences__organization__name']
 
+            is_highlighted = highlighted.lower() == "yes"
             highlight_type = 'none'
 
             # Highlight Lecture
-            if highlighted.lower() == "yes":
+            if is_highlighted:
                 if organization not in sponsors:
                     print_warning(
-                        f"Lecture '{title}' should be highlighted, but "
-                        f"organization '{organization}' was not found in "
-                        f"the data file. Skipping highlighting...")
+                        f"Lecture '{title}' is highlighted, but "
+                        f"organization '{organization}' was not found among "
+                        f"sponsors. Skipping sponsor highlighting...")
                 else:
                     highlight_type = sponsors[organization]['sponsor_type']
 
@@ -127,7 +128,8 @@ def generate_schedule(path: str, data: Dict[str, Any]) -> List[Dict[str, Any]]:
                 "abstract": lecture_data['abstract'].split(paragraph_mark),
                 "title": printing_title,
                 "lecturer": lecturer,
-                "showOrganization": highlighted.lower() == "yes" and organization in sponsors,
+                "showOrganization": is_highlighted and organization in sponsors,
+                "highlighted": is_highlighted,
                 "highlight": highlight_type,
                 "organization": organization,
             })

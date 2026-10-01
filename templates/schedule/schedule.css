@@ -19,7 +19,7 @@ p {
   margin: 0
 }
 
-.event.highlight_gold .lecturer_and_title {
+.event.highlighted .lecturer_and_title {
   background-color: #ffffff60;
   font-weight: 600;
 }

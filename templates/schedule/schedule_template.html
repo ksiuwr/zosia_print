@@ -24,7 +24,7 @@
         <table class="event_table">
           <tbody>
             {% for e in d.events %}
-            <tr class="event{% if e.highlight != 'none' %} highlight_{{ e.highlight }}{% endif %}">
+            <tr class="event{% if e.highlighted %} highlighted{% endif %}{% if e.highlight != 'none' %} highlight_{{ e.highlight }}{% endif %}">
               <td class="hour">
                 {{ e.startTime }} {{ e.endTime }}
               </td>
