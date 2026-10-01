@@ -86,6 +86,7 @@ def generate_schedule(path: str, data: Dict[str, Any]) -> List[Dict[str, Any]]:
             if event_type.lower() != "lecture":
                 events.append({
                     "title": printing_title,
+                    "lecturer": lecturer if event_type.lower() != "meal" else "",
                     "type": event_type.lower(),
                     "startTime": start_time,
                     "duration": duration,
